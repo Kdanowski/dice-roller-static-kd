@@ -11,7 +11,7 @@ async function rollDice() {
 }
 
 async function fetchNum1To6() {
-    const url = 'http://localhost:3000/fetchNum1To6';
+    const url = 'https://dice-roller-server-kd.azurewebsites.net/fetchNum1To6';
     const response = await fetch(url);
     const responseText = await response.text();
     return responseText;
