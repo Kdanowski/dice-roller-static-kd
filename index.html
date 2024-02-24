@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee Dice Roller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="rollDice()">
+    <div class="container">
+        <h1>Yahtzee Dice Roller</h1>
+        <p>Click the button below to roll the dice. Use the save toggle button to keep a dice from being rolled.</p>
+        <button id="rollButton" onclick="rollDice()">Roll Dice</button>
+        <div class="dice-container">
+            <div>
+                <img id="die1" src="" alt="Die 1">
+                <button class="saveButton" id="saveButton1" onclick="toggleSaveDie(1)">Save</button>
+            </div>
+            <div>
+                <img id="die2" src="" alt="Die 2">
+                <button class="saveButton" id="saveButton2" onclick="toggleSaveDie(2)">Save</button>
+            </div>
+            <div>
+                <img id="die3" src="" alt="Die 3">
+                <button class="saveButton" id="saveButton3" onclick="toggleSaveDie(3)">Save</button>
+            </div>
+            <div>
+                <img id="die4" src="" alt="Die 4">
+                <button class="saveButton" id="saveButton4" onclick="toggleSaveDie(4)">Save</button>
+            </div>
+            <div>
+                <img id="die5" src="" alt="Die 5">
+                <button class="saveButton" id="saveButton5" onclick="toggleSaveDie(5)">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
